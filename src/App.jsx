@@ -1,4 +1,5 @@
 import FAQs from "./page/FAQs"
+import TeamSection from "./page/TeamSection"
 
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <FAQs />
+      <TeamSection />
     </>
   )
 }
