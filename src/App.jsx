@@ -1,5 +1,6 @@
 import BlogSection from "./page/BlogSection"
 import FAQs from "./page/FAQs"
+import Pricing from "./page/Pricing"
 import TeamSection from "./page/TeamSection"
 
 
@@ -10,6 +11,7 @@ function App() {
       <FAQs />
       <TeamSection />
       <BlogSection />
+      <Pricing />
     </>
   )
 }
