@@ -4,6 +4,7 @@ import FAQs from "./page/FAQs"
 import Pricing from "./page/Pricing"
 import TeamSection from "./page/TeamSection"
 import SigningWithGoogle from "./registerAndLogin/SigningWithGoogle"
+import SignInWithFacebook from "./registerAndLogin/SignInWithFacebook"
 
 
 function App() {
@@ -15,12 +16,9 @@ function App() {
       <BlogSection />
       <Pricing />
       <CompanyLogos />
-      <br />
-      <br />
-      <br />
-      <br />
 
       <SigningWithGoogle />
+      <SignInWithFacebook />
 
       <br />
       <br />

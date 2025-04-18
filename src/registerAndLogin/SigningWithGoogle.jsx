@@ -5,6 +5,8 @@ import { app } from './firebase/firebaseInfo';
 function SigningWithGoogle() {
     const [user, setUser] = useState(null);
     console.log(user);
+    
+    
 
 
     const auth = getAuth(app);
@@ -31,7 +33,8 @@ function SigningWithGoogle() {
     }
 
   return (
-    <div className='text-center mx-auto my-auto space-x-4'>
+    <div className='text-center mx-auto my-auto space-x-4 bg-slate-100 py-14'>
+        <h2 className='text-center my-5 text-2xl font-semibold'>Sign in With Google</h2>
         {
             user 
             ?
@@ -41,8 +44,8 @@ function SigningWithGoogle() {
         }
         <br />
         {
-            user && <div className='mt-7 '>
-                <img className='w-10 h-10 rounded-full' src={user.photoURL} alt="" />
+            user && <div className='mt-7 flex flex-col justify-center items-center'>
+                <img className='w-20 h-20 object-cover rounded-full bg-slate-400' src={user.photoURL || "https://lh3.googleusercontent.com/a/ACg8ocIm2zIXi_cCgC8wELX4IQ-tZ3Ygax9p2A_CygB-kHLK4WbFNA0=s96-c"} alt="user photo" />
                 <h2 className='text-2xl font-bold'>{user.displayName}</h2>
                 <p className='font-semibold'>{user.email}</p>
             </div>
