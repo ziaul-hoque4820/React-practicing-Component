@@ -5,6 +5,7 @@ import Pricing from "./page/Pricing"
 import TeamSection from "./page/TeamSection"
 import SigningWithGoogle from "./registerAndLogin/SigningWithGoogle"
 import SignInWithFacebook from "./registerAndLogin/SignInWithFacebook"
+import SigninWithGitHub from "./registerAndLogin/SigninWithGitHub"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
       <SigningWithGoogle />
       <SignInWithFacebook />
+      <SigninWithGitHub />
 
       <br />
       <br />
