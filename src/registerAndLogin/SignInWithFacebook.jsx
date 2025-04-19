@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { getAuth, signInWithPopup, FacebookAuthProvider } from "firebase/auth";
+import { getAuth, signInWithPopup, FacebookAuthProvider, signOut  } from "firebase/auth";
 import { app } from './firebase/firebaseInfo';
 
 function SignInWithFacebook() {
@@ -20,7 +20,13 @@ function SignInWithFacebook() {
     }
 
     const handleFacebookSignOut = () => {
-        console.log("click2");
+        signOut(auth)
+        .then(result => {
+            setUser(null)
+        }).catch(error => {
+            console.log(error);
+            
+        })
         
     }
 
